@@ -1,11 +1,9 @@
-# vladyslav_gadzikhanov
-
 1)  
     1.0) Не совсем понимаю, что нужно было сделать в этом пункте, надеюсь, что прописал необходимые вещи тут.  
     1.1) Самооценка ниже.  
     1.2) Разведочный анализ данных:  
-&emsp	     1.2.1)  mlops_hw1/notebooks/manual_eda: ручками сделанный.  
-&emsp	     1.2.2)  mlops_hw1/notebooks/script_eda: с помощью скрипта.  
+	     1.2.1)  mlops_hw1/notebooks/manual_eda: ручками сделанный.  
+	     1.2.2)  mlops_hw1/notebooks/script_eda: с помощью скрипта.  
     1.3) Функция для тренировки модели: models/model_fit_predict.py/train_model, инструкция ниже.                  			                       1.4) Функция для прогнозов: models/model_fit_predict.py/predict_model, инструкция ниже.  
     1.5) Модульная структура.  
     1.6) Логгеры:  
