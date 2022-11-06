@@ -60,9 +60,9 @@ def evaluate_model(predicted_labels: np.ndarray,
                    output_metrics_path
                    ):
     metrics = {
-        "accuracy": accuracy_score(labels, predicted_labels),
-        "f1": f1_score(labels, predicted_labels),
-        "roc_auc": roc_auc_score(labels, predicted_probas)
+        'accuracy': accuracy_score(labels, predicted_labels),
+        'f1': f1_score(labels, predicted_labels),
+        'roc_auc': roc_auc_score(labels, predicted_probas)
     }
     save_metrics(output_metrics_path, metrics)
     return metrics
@@ -106,7 +106,7 @@ def main():
     output_predictions_path = training_pipeline_params.output_predictions_path
     output_model_path = training_pipeline_params.output_model_path
 
-    if args.flag == 'train':
+    if args.flag == 'fit':
         train_params = training_pipeline_params.train_params
         logger.info('\nStart train_model with params:\n'
                     f'\tx_train: {type(x_train)=}, {x_train.shape=}\n'

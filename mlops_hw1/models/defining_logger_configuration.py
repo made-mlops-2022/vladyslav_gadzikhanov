@@ -16,7 +16,7 @@ def get_logger():
                 "file_handler": {
                     "class": "logging.FileHandler",
                     "level": "DEBUG",
-                    "filename": "file_handler.log",
+                    "filename": "./mlops_hw1/file_handler.log",
                     "formatter": "simple",
                 },
             },

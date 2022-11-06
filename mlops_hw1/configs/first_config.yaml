@@ -1,5 +1,5 @@
 input_data_path: "mlops_hw1/data/heart_cleveland_upload.csv"
-output_model_path: "mlops_hw1/models/model.pkl"
+output_model_path: "mlops_hw1/models/CatBoostClassifier_model.pkl"
 output_metrics_path: "mlops_hw1/models/metrics.json"
 output_predictions_path: "mlops_hw1/models/predictions.csv"
 splitting_params:

@@ -4,6 +4,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class MeanSubtractionTransformer(BaseEstimator, TransformerMixin):
+    """Для нормализации численных колонок."""
     def fit(self, features: pd.DataFrame, labels: Optional[pd.DataFrame] = None):
         return self
 

@@ -14,7 +14,7 @@ class TestDataGeneration(TestCase):
         return ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca']
 
     def test_data_generation(self):
-        df = read_data('../data/heart_cleveland_upload.csv')
+        df = read_data('../../data/heart_cleveland_upload.csv')
         features_by_type = FeaturesByType(categorical_features=self.return_categorical_features(),
                                           continuous_features=self.return_continuous_features(),
                                           target_columns=['condition'])
