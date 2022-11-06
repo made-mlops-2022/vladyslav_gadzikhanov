@@ -31,4 +31,3 @@
 
 	 1. config_path = mlops_hw1/configs/first_config.yaml
 	 2. flag = (fit / predict)
-	 
