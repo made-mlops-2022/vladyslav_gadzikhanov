@@ -1,0 +1,28 @@
+input_data_path: "mlops_hw1/data/heart_cleveland_upload.csv"
+output_model_path: "mlops_hw1/models/LogisticRegression_model.pkl"
+output_metrics_path: "mlops_hw1/models/metrics.json"
+output_predictions_path: "mlops_hw1/models/predictions.csv"
+splitting_params:
+  test_size: 0.2
+  random_state: 42
+train_params:
+  model_name: "LogisticRegression"
+  random_state: 42
+features_by_type:
+  categorical_features:
+    - "sex"
+    - "fbs"
+    - "restecg"
+    - "exang"
+    - "slope"
+    - "thal"
+    - "cp"
+    - "ca"
+  continuous_features:
+    - "trestbps"
+    - "chol"
+    - "thalach"
+    - "oldpeak"
+    - "age"
+  target_columns:
+    - "condition"

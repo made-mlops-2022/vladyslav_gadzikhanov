@@ -1,0 +1,466 @@
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:119 - 
+Start predict_model with params:
+	x_test: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+	output_predictions_path: mlops_hw1/models/predictions.csv
+	output_model_path: mlops_hw1/models/model.pkl
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:124 - 
+predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:127 - 
+Start evaluate_model with params:
+	predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+	predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+	labels: type(y_test)=<class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+	output_metrics_path: mlops_hw1/models/metrics.json
+2022.06.11 - 03:15:31 - model_fit_predict - INFO - main:133 - evaluate_model completed
+
+2022.06.11 - 14:13:48 - hydra_model_fit_predict - INFO - main:81 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:13:48 - hydra_model_fit_predict - INFO - main:83 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:13:48 - hydra_model_fit_predict - INFO - main:85 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:13:48 - hydra_model_fit_predict - INFO - main:89 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:17:45 - hydra_model_fit_predict - INFO - main:81 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:17:45 - hydra_model_fit_predict - INFO - main:83 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:17:45 - hydra_model_fit_predict - INFO - main:85 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:17:45 - hydra_model_fit_predict - INFO - main:89 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:19:14 - hydra_model_fit_predict - INFO - main:81 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:19:14 - hydra_model_fit_predict - INFO - main:83 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:19:14 - hydra_model_fit_predict - INFO - main:85 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:19:14 - hydra_model_fit_predict - INFO - main:89 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:21:27 - hydra_model_fit_predict - INFO - main:81 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:21:27 - hydra_model_fit_predict - INFO - main:83 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:21:27 - hydra_model_fit_predict - INFO - main:85 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:21:27 - hydra_model_fit_predict - INFO - main:89 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:24:11 - hydra_model_fit_predict - INFO - main:82 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:24:11 - hydra_model_fit_predict - INFO - main:84 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:24:11 - hydra_model_fit_predict - INFO - main:86 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:24:11 - hydra_model_fit_predict - INFO - main:90 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:24:50 - hydra_model_fit_predict - INFO - main:82 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:24:50 - hydra_model_fit_predict - INFO - main:84 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:24:50 - hydra_model_fit_predict - INFO - main:86 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:24:50 - hydra_model_fit_predict - INFO - main:90 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:26:08 - hydra_model_fit_predict - INFO - main:83 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:26:08 - hydra_model_fit_predict - INFO - main:85 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:26:08 - hydra_model_fit_predict - INFO - main:87 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:26:08 - hydra_model_fit_predict - INFO - main:91 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:29:00 - hydra_model_fit_predict - INFO - main:82 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:29:00 - hydra_model_fit_predict - INFO - main:84 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:29:00 - hydra_model_fit_predict - INFO - main:86 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:29:00 - hydra_model_fit_predict - INFO - main:90 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:29:48 - hydra_model_fit_predict - INFO - main:82 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:29:48 - hydra_model_fit_predict - INFO - main:84 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:29:48 - hydra_model_fit_predict - INFO - main:86 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:29:48 - hydra_model_fit_predict - INFO - main:90 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 14:43:07 - hydra_model_fit_predict - INFO - main:85 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 14:43:07 - hydra_model_fit_predict - INFO - main:87 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 14:43:07 - hydra_model_fit_predict - INFO - main:89 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 14:43:07 - hydra_model_fit_predict - INFO - main:93 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 15:11:03 - hydra_model_fit_predict - INFO - main:83 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 15:11:03 - hydra_model_fit_predict - INFO - main:85 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 15:11:03 - hydra_model_fit_predict - INFO - main:87 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 15:11:03 - hydra_model_fit_predict - INFO - main:91 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 15:11:33 - hydra_model_fit_predict - INFO - main:83 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 15:11:33 - hydra_model_fit_predict - INFO - main:85 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 15:11:33 - hydra_model_fit_predict - INFO - main:87 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 15:11:33 - hydra_model_fit_predict - INFO - main:91 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 15:13:21 - hydra_model_fit_predict - INFO - main:83 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 15:13:21 - hydra_model_fit_predict - INFO - main:85 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 15:13:21 - hydra_model_fit_predict - INFO - main:87 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 15:13:21 - hydra_model_fit_predict - INFO - main:91 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 15:15:34 - hydra_model_fit_predict - INFO - main:84 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 15:15:34 - hydra_model_fit_predict - INFO - main:86 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 15:15:34 - hydra_model_fit_predict - INFO - main:88 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type={'categorical_features': ['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], 'continuous_features': ['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], 'target_columns': ['condition']}
+2022.06.11 - 15:15:34 - hydra_model_fit_predict - INFO - main:92 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='CatBoostClassifier', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 17:14:37 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='CatBoostClassifier', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 18:15:16 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='LogisticRegression', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 18:16:30 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='LogisticRegression', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 18:17:02 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:119 - 
+Start predict_model with params:
+	x_test: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+	output_predictions_path: mlops_hw1/models/predictions.csv
+	output_model_path: mlops_hw1/models/LogisticRegression_model.pkl
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:124 - 
+predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:127 - 
+Start evaluate_model with params:
+	predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+	predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+	labels: type(y_test)=<class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+	output_metrics_path: mlops_hw1/models/metrics.json
+2022.06.11 - 18:18:30 - model_fit_predict - INFO - main:133 - evaluate_model completed
+
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='CatBoostClassifier', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 18:18:47 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:119 - 
+Start predict_model with params:
+	x_test: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+	output_predictions_path: mlops_hw1/models/predictions.csv
+	output_model_path: mlops_hw1/models/CatBoostClassifier_model.pkl
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:124 - 
+predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:127 - 
+Start evaluate_model with params:
+	predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+	predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+	labels: type(y_test)=<class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+	output_metrics_path: mlops_hw1/models/metrics.json
+2022.06.11 - 18:18:55 - model_fit_predict - INFO - main:133 - evaluate_model completed
+
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:111 - 
+Start train_model with params:
+	x_train: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+	y_train: type(y_train)=<class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+	train_params: TrainingParams(model_name='LogisticRegression', random_state=42)
+	output_model_path: output_model_path
+2022.06.11 - 18:19:10 - model_fit_predict - INFO - main:117 - train_model completed
+
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:79 - Start read_data with params: mlops_hw1/data/heart_cleveland_upload.csv
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:81 - data params: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:83 - 
+Start split_obj_labels_data with params:	data: type(data)=<class 'pandas.core.frame.DataFrame'>, data.shape=(297, 14)
+	variables_by_type=FeaturesByType(categorical_features=['sex', 'fbs', 'restecg', 'exang', 'slope', 'thal', 'cp', 'ca'], continuous_features=['trestbps', 'chol', 'thalach', 'oldpeak', 'age'], target_columns=['condition'])
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:87 - 
+features params: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+labels params: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:93 - 
+Start split_train_test_data with params:
+	features: type(features)=<class 'pandas.core.frame.DataFrame'>, features.shape=(297, 13)
+	labels: type(labels)=<class 'pandas.core.frame.DataFrame'>, labels.shape=(297, 1)
+	splitting_params: SplittingParams(test_size=0.2, random_state=42)
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:100 - 
+x_train params: type(x_train)=<class 'numpy.ndarray'>, x_train.shape=(237, 31)
+x_test params: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+y_train params: <class 'pandas.core.frame.DataFrame'>, y_train.shape=(237, 1)
+y_test params: <class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:119 - 
+Start predict_model with params:
+	x_test: type(x_test)=<class 'numpy.ndarray'>, x_test.shape=(60, 31)
+	output_predictions_path: mlops_hw1/models/predictions.csv
+	output_model_path: mlops_hw1/models/LogisticRegression_model.pkl
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:124 - 
+predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:127 - 
+Start evaluate_model with params:
+	predicted_labels params: type(predicted_labels)=<class 'numpy.ndarray'>, predicted_labels.shape=(60,)
+	predicted_probas params: type(predicted_probas)=<class 'numpy.ndarray'>, predicted_probas.shape=(60,)
+	labels: type(y_test)=<class 'pandas.core.frame.DataFrame'>, y_test.shape=(60, 1)
+	output_metrics_path: mlops_hw1/models/metrics.json
+2022.06.11 - 18:19:19 - model_fit_predict - INFO - main:133 - evaluate_model completed
+
